@@ -1,0 +1,11 @@
+{
+  "name": "@shiftgig/eslint-config",
+  "version": "1.0.0",
+  "description": "eslint config for Shiftgig apps",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">= 4.16"
+  }
+}
