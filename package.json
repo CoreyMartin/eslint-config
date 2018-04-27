@@ -1,11 +1,17 @@
 {
   "name": "@shiftgig/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "eslint config for Shiftgig apps",
   "main": "index.js",
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "eslint": ">= 4.16"
+  "dependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": ">= 4.16",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-webpack": "^0.8.4",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1"
   }
 }
