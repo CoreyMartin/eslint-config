@@ -6,7 +6,7 @@ The config is centered around Airbnb defaults with a few rule changes. Many defa
 
 `npm install eslint --save-dev`
 
-`npm install @shiftgig/eslint-config`
+`npm install @shiftgig/eslint-config --save-dev`
 
 Then just create a .eslintrc file in the root of your project with:
 
