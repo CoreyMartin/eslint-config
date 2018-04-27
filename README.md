@@ -5,13 +5,14 @@ The config is centered around Airbnb defaults with a few rule changes. Many defa
 ### Install
 
 `npm install eslint --save-dev`
+
 `npm install @shiftgig/eslint-config`
 
 Then just create a .eslintrc file in the root of your project with:
 
 `{ "extends": ["@shiftgig/eslint-config"] }`
 
-Then you should be able to run `./node_modules/.bin/eslint yourfile.js`
+Run with `./node_modules/.bin/eslint yourfile.js`
 
 ### Updating the npm package
 
