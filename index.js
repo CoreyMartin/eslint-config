@@ -11,7 +11,7 @@ module.exports = {
       /* this plugin prevents "no-extraneous-dependencies" lint errors
          using eslint-import-resolver-webpack. see https://goo.gl/7vKt4x */
       "webpack": {
-          "config": "webpack.prod.js"
+          "config": "webpack.prod.babel.js"
       }
     }
   },
