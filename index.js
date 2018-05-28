@@ -122,5 +122,6 @@ module.exports = {
       "beforeClosing": "never", 
     }],
     "react/jsx-first-prop-new-line": ["error", "never"],
+    "jsx-a11y/media-has-caption": "off",
   }
 }
