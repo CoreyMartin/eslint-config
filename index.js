@@ -84,6 +84,7 @@ module.exports = {
       "ObjectExpression": { "multiline": true },
       "ObjectPattern": { "multiline": true }
     }],
+    "operator-linebreak": ["error", "before", { overrides: { "=": "none", "&&": "ignore" } }],
     /* this is the same rule as airbnb but needs paths customized: */
     "import/no-extraneous-dependencies": ["error", {
       "devDependencies": [
@@ -121,7 +122,12 @@ module.exports = {
       "afterOpening": "never",
       "beforeClosing": "never", 
     }],
+    "react/no-access-state-in-setstate": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/destructuring-assignment": "off",
     "react/jsx-first-prop-new-line": ["error", "never"],
     "jsx-a11y/media-has-caption": "off",
+    /* broken and deprecated in v6.1.0. https://goo.gl/J3LgLt */
+    "jsx-a11y/label-has-for": "off"
   }
 }
