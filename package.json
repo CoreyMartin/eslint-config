@@ -6,7 +6,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    /* babel/traverse version lock needed to fix https://goo.gl/a2P3jo: */
     "@babel/traverse": "7.1.0",
     "babel-eslint": "10.0.1",
     "eslint": "^5.3.0",
