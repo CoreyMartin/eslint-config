@@ -1,7 +1,7 @@
 {
-  "name": "@shiftgig/eslint-config",
+  "name": "@coreymartin/eslint-config",
   "version": "1.0.6",
-  "description": "eslint config for Shiftgig apps",
+  "description": "eslint config",
   "main": "index.js",
   "author": "",
   "license": "ISC",
