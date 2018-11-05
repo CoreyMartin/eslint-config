@@ -33,7 +33,7 @@ module.exports = {
       ignoreTemplateLiterals: true,
     }],
     /* sometimes we need to mix local and redux state: */
-    "react/no-did-update-set-state": "error",
+    "react/no-did-update-set-state": "warn",
     "operator-linebreak": ["error", "before", { overrides: { "=": "none", "&&": "ignore" } }],
     /* this is the same rule as airbnb but needs paths customized: */
     "import/no-extraneous-dependencies": ["error", {
