@@ -20,9 +20,20 @@ module.exports = {
     "no-console": [2, {"allow": ["warn", "error"]}],
     "semi": [2, "never"],
     "object-curly-newline": ["error", {
-      "ObjectExpression": { "multiline": true },
-      "ObjectPattern": { "multiline": true }
+      ObjectExpression: { minProperties: 6, multiline: true, consistent: true },
+      ObjectPattern: { minProperties: 6, multiline: true, consistent: true },
+      ImportDeclaration: { minProperties: 9, multiline: true, consistent: true },
+      ExportDeclaration: { minProperties: 9, multiline: true, consistent: true },
     }],
+    "max-len": ["error", 125, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
+    /* sometimes we need to mix local and redux state: */
+    "react/no-did-update-set-state": "error",
     "operator-linebreak": ["error", "before", { overrides: { "=": "none", "&&": "ignore" } }],
     /* this is the same rule as airbnb but needs paths customized: */
     "import/no-extraneous-dependencies": ["error", {
@@ -37,10 +48,6 @@ module.exports = {
         "**/webpack.*.js", // webpack config
       ],
       "optionalDependencies": false,
-    }],
-    "no-underscore-dangle": ["error", {
-      /* _id and _rev are required couchbase properties */
-      "allow": ["_id", "_rev"],
     }],
     "react/jsx-closing-bracket-location": [2, {"selfClosing": "after-props", "nonEmpty": "after-props"}],
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
